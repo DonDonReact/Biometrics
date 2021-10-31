@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>Biometry application</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/gritter/css/jquery.gritter.css" />
+    <link rel="stylesheet" type="text/css" href="assets/lineicons/style.css">    
+    
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style-responsive.css" rel="stylesheet">
+
+    <script src="assets/js/chart-master/Chart.js"></script>
+	<script>
+var count=1;
+function setColor(btn, color){
+    var property = document.getElementById(btn);
+    if (count == 0){
+        property.style.backgroundColor = "#FFFFFF"
+        count=1;        
+    }
+    else{
+        property.style.backgroundColor = "#00CED1"
+        count=0;
+    }
+	}
+	</script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+  <section id="container" >
+      <!-- **********************************************************************************************************************************************************
+      TOP BAR CONTENT & NOTIFICATIONS
+      *********************************************************************************************************************************************************** -->
+      <!--header start-->
+      <header class="header black-bg">
+              <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+            <!--logo start-->
+            <a href="index.html" class="logo"><b>Biometry</b></a>
+            <!--logo end-->
+            <div class="nav notify-row" id="top_menu">
+                <!--  notification start -->
+                <ul class="nav top-menu">
+                    <!-- settings start -->
+                    
+                    <!-- settings end -->
+                    <!-- inbox dropdown start-->
+                    
+                    <!-- inbox dropdown end -->
+                </ul>
+                <!--  notification end -->
+            </div>
+            <div class="top-menu">
+            	<ul class="nav pull-right top-menu">
+                    <li><a class="logout" href="login.html">Logout</a></li>
+            	</ul>
+            </div>
+			<style type="text/css">
+			.bouton8 {
+	border-radius:12px 0 12px 0;
+	background: #f5f5f5;
+	border:none;
+	width:130px;
+   line-height:30px;
+	color:#555;
+	font:bold 12px Verdana;
+	padding:6px 0 6px 0;
+	box-shadow:1px 1px 3px #999;
+}
+.btn_taille_egale{
+   width:130px;
+   line-height:30px;
+text-align:center;
+vertical-align:middle;
+font:bold 12px Verdana;
+}
+</style>
+        </header>
+      <!--header end-->
+      
+      <!-- **********************************************************************************************************************************************************
+      MAIN SIDEBAR MENU
+      *********************************************************************************************************************************************************** -->
+      <!--sidebar start-->
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+              
+              	  <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="100"></a></p>
+              	  <h2 class="centered">Annotation</h2>
+              	  	
+                  <li class="mt">
+                      <a class="active" href="index.html">
+                          <i class="fa fa-dashboard"></i>
+                       <span><h5>Dashboard</h5></span>
+                      </a>
+                  </li>
+
+                  
+
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                         
+                          <span><h6>Global</h6></span>
+                      </a>
+                      <ul class="sub">
+					  <li><a  href="sex.html">Sex</a></li>
+                          <li><a  href="age.html">Age</a></li>
+                          <li><a  href="race.html">Race</a></li>
+                          <li><a  href="skin.html">Skin color</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <span><h6>Head</h6></span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="calendar.html">Hair</a>
+						  <ul class="sub">
+                          <li><a  href="hair_Length.html">Hair length</a></li>
+                          <li><a  href="hair_color.html">Hair color</a></li>
+
+                      </ul></li>
+                          <li><a  href="gallery.html">Neck</a>
+						  <ul class="sub">
+                          <li><a  href="nick_length.html">Neck length</a></li>
+                          <li><a  href="neck_th.html">Neck Thickness</a></li>
+
+                      </ul></li>
+
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          
+                          <span>Body</span>
+                      </a>
+                      <ul class="sub">
+                          <li>
+						   <ul class="sub">
+                          <li><a  href="arm_length.html">Arm length</a></li>
+                          <li><a  href="arm_th.html">Arm Thickness</a></li>
+
+                      </ul></li>
+						  <li><a  href="length.html">Length</a></li>
+                         
+                          <li><a  href="chest.html">Chest</a></li>
+                          <li><a  href="figure.html">Figure</a></li>
+						
+						  <li><a  href="hip.html">Hip</a></li>
+						  <li><a>Leg</a>
+						   <ul class="sub">
+                          <li><a  href="leg_length.html">Legs length</a></li>
+                          <li><a  href="shaped_leg.html">Shaped legs</a></li>
+						  <li><a  href="leg_th.html">Legs Thickness</a></li>
+
+                      </ul></li>
+						  <li><a  href="shoulder.html">Shoulder</a></li>
+						  <li><a  href="weight.html">Weight</a></li>
+						  
+                      </ul>
+                  </li>
+                 
+                 
+                  
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
+      
+      <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+      <!--main content start-->
+      <section id="main-content">
+          <section class="wrapper">
+		   <marquee width="100%"><font color="#00BFFF"><font size="6" ><I>welcome in sex annotation</I></font></marquee>
+
+             
+                  	
+                  <br><br><br><br><br><br><br><br><br>
+                  <center>
+                      <table ><tr><td>
+			   <video width="400" height="222" controls="controls" STYLE="float:right">
+  <source src="assets/vidéos/video1.mp4" type="video/mp4" />
+ 
+  
+</video>
+ <video width="400" height="222" controls="controls" STYLE="float:right">
+  <source src="assets/vidéos/video2.mp4" type="video/mp4" />
+ 
+  
+</video>
+</td></tr>
+</table></center>
+<center><table>
+<tr><td>
+<input type="image" src="assets/img/back.png" >
+<input type="image" src="assets/img/next.png">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<input type="image" src="assets/img/back.png">
+<input type="image" src="assets/img/next.png">
+
+</td></tr>
+</table></center> 
+
+ <font size="4" COLOR="#000000"><I><B>Please select your choice:</B></I></font> 
+			
+			<center>
+			
+			<input type="radio" name="choix" value="0">  <font size="3" COLOR="#000000">Male</font>  
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="choix" value="1"><font size="3" COLOR="#000000">Female</font> </center>
+			<B><DIV STYLE="float:right;"><input type="button" id="button"  value = "Save" style= "color:black" onclick="setColor('button', '#101010')" class="bouton8"/></DIV></B>
+			<br> <br> <br>
+			<br> <br> <br>
+      <!-- **********************************************************************************************************************************************************
+      RIGHT SIDEBAR CONTENT
+      *********************************************************************************************************************************************************** -->                  
+                  
+                 
+          </section>
+      </section>
+
+      <!--main content end-->
+      <!--footer start-->
+      <footer class="site-footer">
+          <div class="text-center">
+             <ul class="icons">
+						<center><p>
+						<img src="assets/img/fb.jpg" alt="Facebook" />
+						<img src="assets/img/twitt.jpg" alt="Twitter" ></img>
+						<img src="assets/img/inst.jpg" alt="Instagram" />
+						<img src="assets/img/in.jpg" alt="LinkedIn" /></p>
+						</center>
+					</ul>
+					<p>
+					<center>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span>Copyright © 2016 <a href="http://enis.rnu.tn" >ENIS</a></span>
+					</center>
+					</p>
+					
+          </div>
+      </footer>
+      <!--footer end-->
+  </section>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery-1.8.3.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.sparkline.js"></script>
+
+
+    <!--common script for all pages-->
+    <script src="assets/js/common-scripts.js"></script>
+    
+    <script type="text/javascript" src="assets/js/gritter/js/jquery.gritter.js"></script>
+    <script type="text/javascript" src="assets/js/gritter-conf.js"></script>
+
+    <!--script for this page-->
+    <script src="assets/js/sparkline-chart.js"></script>    
+	<script src="assets/js/zabuto_calendar.js"></script>	
+	
+	
+	
+  </body>
+</html>

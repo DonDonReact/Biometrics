@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>Biometry application</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/gritter/css/jquery.gritter.css" />
+  
+	
+	
+	
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style-responsive.css" rel="stylesheet">
+
+    <script src="assets/js/chart-master/Chart.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/templatemo_misc.css">
+	<link rel="stylesheet" href="css/templatemo_style.css">
+	
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	 <style>
+   body { 
+  margin:50px;
+  
+}
+  </style>
+  </head>
+
+  <body>
+
+  <section id="container" >
+      <!-- **********************************************************************************************************************************************************
+      TOP BAR CONTENT & NOTIFICATIONS
+      *********************************************************************************************************************************************************** -->
+      <!--header start-->
+      <header class="header black-bg">
+              <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+            <!--logo start-->
+            <a href="index.html" class="logo"><b>Biometry</b></a>
+            <!--logo end-->
+            <div class="nav notify-row" id="top_menu">
+                <!--  notification start -->
+                <ul class="nav top-menu">
+                    <!-- settings start -->
+                    
+                    <!-- settings end -->
+                    <!-- inbox dropdown start-->
+                    
+                    <!-- inbox dropdown end -->
+                </ul>
+                <!--  notification end -->
+            </div>
+            <div class="top-menu">
+            	<ul class="nav pull-right top-menu">
+                    <li><a class="logout" href="login.html">Logout</a></li>
+            	</ul>
+            </div>
+        </header>
+      <!--header end-->
+      
+      <!-- **********************************************************************************************************************************************************
+      MAIN SIDEBAR MENU
+      *********************************************************************************************************************************************************** -->
+      
+	  <!--sidebar start-->
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+              
+              	  <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="100"></a></p>
+              	  <h2 class="centered">Home</h2>
+              	  	
+                  <li class="mt">
+                      <a class="active" href="index.html">
+                          <i class="fa fa-dashboard"></i>
+                       <span><h5>Dashboard</h5></span>
+                      </a>
+                  </li>
+                     <li class="sub-menu">
+                      <a href="index.html" >
+                         
+                          <span><h6>Annotation</h6></span>
+                      </a>
+                     
+                  </li>
+                  <li class="sub-menu">
+                      <a href="#" >
+                         
+                          <span><h6>User management</h6></span>
+                      </a>
+                     
+                  </li>
+ 
+                  <li class="sub-menu">
+                      <a href="#" >
+                          <span><h6>Video management</h6></span>
+                      </a>
+                     
+                  </li>
+                  <li class="sub-menu">
+                      <a href="#" >
+                          
+                          <span>Character management</span>
+                      </a>
+                      </li>
+						  
+                      </ul>
+                  </li>
+                 
+                 
+                  
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+		   
+      </aside>
+      <!--sidebar end-->
+      
+                  
+      <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+      <!--main content start-->
+	  	<section id="main-content" style="text-align:center">
+<div id='d1'  > 
+                  	<center>	
+	 <canvas id='canvas' ></canvas>
+		</center>
+        </div>    
+</section>		
+      <!-- **********************************************************************************************************************************************************
+      RIGHT SIDEBAR CONTENT
+      *********************************************************************************************************************************************************** -->                  
+                  
+                 
+      
+
+      <!--main content end-->
+      <!--footer start-->
+      <footer class="site-footer">
+          <div class="text-center">
+				
+				<ul class="icons">
+						<center><p>
+						<img src="assets/img/fb.jpg" alt="Facebook" />
+						<img src="assets/img/twitt.jpg" alt="Twitter" ></img>
+						<img src="assets/img/inst.jpg" alt="Instagram" />
+						<img src="assets/img/in.jpg" alt="LinkedIn" /></p>
+						</center>
+					</ul>
+					<p>
+					<center>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span>Copyright © 2016 <a href="http://enis.rnu.tn" >ENIS</a></span>
+					</center>
+					</p>
+					
+					
+					
+				</div>
+      </footer>
+      <!--footer end-->
+  </section>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery-1.8.3.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.sparkline.js"></script>
+
+
+    <!--common script for all pages-->
+    <script src="assets/js/common-scripts.js"></script>
+    
+    <script type="text/javascript" src="assets/js/gritter/js/jquery.gritter.js"></script>
+    <script type="text/javascript" src="assets/js/gritter-conf.js"></script>
+
+    <!--script for this page-->
+    <script src="assets/js/sparkline-chart.js"></script>    
+	<script src="assets/js/zabuto_calendar.js"></script>	
+	
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <script src="assets/js/jquery-1.10.2.min.js"></script>
+	<script src="assets/js/jquery.singlePageNav.js"></script>
+	<script src="assets/js/jquery.flexslider.js"></script>
+	<script src="assets/js/jquery.prettyPhoto.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("a[data-gal^='prettyPhoto']").prettyPhoto({hook: 'data-gal'});
+		});
+
+        function initialize() {
+          var mapOptions = {
+            zoom: 13,
+            center: new google.maps.LatLng(40.7809919,-73.9665273)
+          };
+
+          var map = new google.maps.Map(document.getElementById('map-canvas'),
+              mapOptions);
+        }
+
+        function loadScript() {
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
+              'callback=initialize';
+          document.body.appendChild(script);
+        }
+
+        window.onload = loadScript;
+    </script>
+	<script>
+		function Banner(){
+	
+	var keyword = "Biometry";
+	var canvas;
+	var context;
+	
+	var bgCanvas;
+	var bgContext;
+	
+	var denseness = 9;
+	
+	//Each particle/icon
+	var parts = [];
+	
+	var mouse = {x:0,y:0};
+	var mouseOnScreen = false;
+  
+  var colors = ['rgba(0,153,255,0.8)', 'rgba(255,204,51,0.8)', 'rgba(255,102,102,0.8)', 'rgba(86,120,32,0.8)'];
+ 
+ 
+//When creating the particles, we assign a color from this list.
+color: colors[Math.floor(Math.random() * colors.length)],
+	
+	this.initialize = function(canvas_id){
+		canvas = document.getElementById(canvas_id);
+		context = canvas.getContext('2d');
+		
+		canvas.width = window.innerWidth;
+		canvas.height = window.innerHeight;
+		
+		bgCanvas = document.createElement('canvas');
+		bgContext = bgCanvas.getContext('2d');
+		
+		bgCanvas.width = window.innerWidth;
+		bgCanvas.height = window.innerHeight;
+	
+		canvas.addEventListener('mousemove', MouseMove, false);
+		canvas.addEventListener('mouseout', MouseOut, false);
+			
+		test();
+	}
+	
+	var test = function(){
+			
+		bgContext.fillStyle = "2BEFE5";
+		bgContext.font = '300px impact';
+		bgContext.fillText(keyword, 40, 400);
+		
+		clear();	
+		getCoords();
+	}
+	
+	var getCoords = function(){
+		var imageData, pixel, height, width;
+		
+		imageData = bgContext.getImageData(0, 0, canvas.width, canvas.height);
+		
+		// quickly iterate over all pixels - leaving density gaps
+	    for(height = 0; height < bgCanvas.height; height += denseness){
+            for(width = 0; width < bgCanvas.width; width += denseness){   
+               pixel = imageData.data[((width + (height * bgCanvas.width)) * 4) - 1];
+                  //Pixel is black from being drawn on. 
+                  if(pixel == 255) {
+                    drawCircle(width, height);
+                  }
+            }
+        }
+        
+        setInterval( update, 40 );
+	}
+	
+	var drawCircle = function(x, y){
+		parts.push(
+			{c: colors[Math.floor(Math.random() * colors.length)],
+			 x: x, //Original position
+			 y: y, 
+			 x2: x, //Movable position
+			 y2: y,
+			 v:{x:(Math.random() * 3) * 2 - 3 , y:(Math.random() * 3) * 2 - 3},
+			}
+		)
+	}
+	
+	var update = function(){
+		var i, dx, dy, sqrDist, scale;
+		
+		clear();
+		for (i = 0; i < parts.length; i++){
+			
+			if (mouseOnScreen == true){
+				
+				parts[i].x2 += parts[i].v.x;
+		        parts[i].y2 += parts[i].v.y;
+		
+		        if (parts[i].x2 > canvas.width || parts[i].x2 < 0) {
+		            parts[i].v.x = -parts[i].v.x;
+		        }
+		
+		        if (parts[i].y2 > canvas.height || parts[i].y2 < 0) {
+		            parts[i].v.y = -parts[i].v.y;
+		        }		
+			} else {
+				parts[i].x2 = parts[i].x;
+				parts[i].y2 = parts[i].y;
+			}
+			
+	
+			//Look into using svg, so there is no mouse tracking.
+			//Find distance from mouse/draw!
+		dx = parts[i].x2 - mouse.x;
+	        dy = parts[i].y2 - mouse.y;
+	        sqrDist =  Math.sqrt(dx*dx + dy*dy);
+		scale = Math.max( Math.min( 6 - ( sqrDist / 10 ), 10 ), 1 );		
+		//Draw the circle
+    
+		context.fillStyle = parts[i].c;
+		context.beginPath();
+		context.arc(parts[i].x2, parts[i].y2, 4 * scale ,0 , Math.PI*2, true);
+		context.closePath();
+	  context.fill();	
+				
+		}	
+	}
+	
+	var MouseMove = function(e) {
+	    if (e.layerX || e.layerX == 0) {
+	    	//Reset particle positions
+	    	mouseOnScreen = true;
+	    	
+	    	
+	        mouse.x = e.layerX - canvas.offsetLeft;
+	        mouse.y = e.layerY - canvas.offsetTop;
+	    }
+	}
+	
+	var MouseOut = function(e) {
+		mouseOnScreen = false;
+		mouse.x = -200;
+		mouse.y = -200;
+		
+	}
+	
+	//Clear the on screen canvas
+	var clear = function(){
+		context.fillStyle = '#eee';
+		context.beginPath();
+  		context.rect(0, 0, canvas.width, canvas.height);
+ 		context.closePath();
+ 		context.fill();
+	}	
+}
+
+var banner = new Banner();
+banner.initialize("canvas");
+    </script>
+  </body>
+</html>
